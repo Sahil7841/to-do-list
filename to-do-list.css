@@ -1,0 +1,107 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.full-cnt {
+    text-align: -webkit-center;
+    background: black;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.outer-cnt {
+    background: #e6e6e6;
+    max-width: 400px;
+    width: 100%;
+    flex: 1;
+    padding: 40px;
+}
+
+.main-cnt {
+    text-align: center;
+    width: 380px;
+    background: white;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    padding: 0px 0px 10px 0px;
+}
+
+.main-cnt h2 {
+    font-size: 2rem;
+}
+
+#input-field {
+    padding: 10px;
+    width: 75%;
+    border-radius: 10px;
+    border-color: gray;
+}
+
+#add-btn ,.save-btn {
+    height: 38px;
+    width: 12%;
+    background: rgb(17, 175, 43);
+    color: white;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+#add-btn:hover ,.save-btn:hover {
+    background-color: rgb(8, 124, 28);
+}
+
+#list-items {
+    display: contents;
+}
+
+li {
+    color: black;
+    list-style-type: none;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    margin: 15px 5px;
+    border-bottom: 0.5px solid gray;
+}
+
+span {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.remove-btn,
+.edit-btn {
+    height: 30px;
+    background: red;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.remove-btn:hover,
+.edit-btn:hover {
+    background-color: rgb(185, 16, 16);
+}
+
+/* .save-btn{
+    height: 30px;
+    background: rgb(17, 175, 43);
+    color: white;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    justify-content: space-between;
+    margin-left: 10px;
+}  */
