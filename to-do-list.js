@@ -3,7 +3,6 @@ const addBtn = document.getElementById("add-btn");
 const listItems = document.getElementById("list-items");
 const totalCountElement = document.getElementById("total-count");
 const showCompletedCheckbox = document.getElementById("checked");
-// const checkboxDiv = document.querySelector(".checkbox");
 const dataArray = [];
 
 addBtn.addEventListener("click", addItem);
@@ -19,10 +18,6 @@ function addItem() {
     }
 
     totalCountElement.style.display = "block";
-
-    // if (dataArray.length === 0) {
-    //     checkboxDiv.style.display = "block";
-    // }
 
     function updateTotalCount() {
         totalCountElement.textContent = dataArray.length;
@@ -61,9 +56,6 @@ function addItem() {
         }
         toggleCompletedVisibility();
     });
-    // const arrayData = JSON.stringify(dataArray)
-    //     localStorage.setItem("todolist", arrayData)
-
 
     removeButton.addEventListener("click", function () {
         const index = dataArray.indexOf(inputValue);
@@ -98,22 +90,6 @@ function addItem() {
             listItem.removeChild(saveButton);
 
         });
-
-        // saveButton.addEventListener("click", function () {
-        //     const updatedValue = editableInput.value;
-        //     const index = dataArray.findIndex((i) => i.value === inputValue);
-
-        //     if (index !== -1) {
-        //         dataArray[index].value = updatedValue;
-        //         dataArray[index].completed = checkBox.checked; // Update completion status
-        //     }
-
-        //     inputItem.textContent = updatedValue;
-        //     listItem.replaceChild(inputItem, editableInput);
-        //     listItem.removeChild(saveButton);
-        //     inputValue = updatedValue; // Update inputValue with the new value
-        //     toggleCompletedVisibility(); // Update visibility based on completion status
-        // });
 
     });
 
@@ -218,24 +194,6 @@ function addItem() {
                     inputValue = updatedValue;
 
                 });
-
-
-                //     // saveButton.addEventListener("click", function () {
-                //     //     const updatedValue = editableInput.value;
-                //     //     const index = dataArray.findIndex((i) => i.value === inputValue);
-
-                //     //     if (index !== -1) {
-                //     //         dataArray[index].value = updatedValue;
-                //     //         dataArray[index].completed = checkBox.checked; // Update completion status
-                //     //     }
-
-                //     //     inputItem.textContent = updatedValue;
-                //     //     listItem.replaceChild(inputItem, editableInput);
-                //     //     listItem.removeChild(saveButton);
-                //     //     inputValue = updatedValue; // Update inputValue with the new value
-                //     //     toggleCompletedVisibility(); // Update visibility based on completion status
-                //     // });
-
 
             });
 
