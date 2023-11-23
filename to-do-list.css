@@ -95,13 +95,11 @@ span {
     background-color: rgb(185, 16, 16);
 }
 
-/* .save-btn{
-    height: 30px;
-    background: rgb(17, 175, 43);
-    color: white;
-    border-radius: 3px;
-    border: none;
-    cursor: pointer;
-    justify-content: space-between;
-    margin-left: 10px;
-}  */
+.checkbox {
+    display: flex;
+    position: relative;
+}
+
+#un-checked {
+    margin-left: 11rem;
+}
